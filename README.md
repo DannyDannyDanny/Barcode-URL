@@ -3,15 +3,32 @@ Software for easily embedding links in to barcodes which can then be decoded by 
 
 Note: Name change to OpAcc (Operator Access) is quite likely to take place soon.
 
+## List of devices
+There are three machines:
+* **dev** - my dev machine (MacOS)
+* **w7** - my work machine
+* **w8** - plant floor tablet
+
 ## Milestones
-* ~~Install Anaconda on W7 laptop~~
-* Move environment to W7 laptop - **some issue**
+* ~~Write camera session code~~
+* ~~Install Anaconda on W7~~
+* ~~Move environment to W7~~ - environment had to be recreated
+* ~~Test camera stream on W7~~
+* Write barcode generating code
+* Test barcode generating code on W7
+* Write
 * Install Anaconda on W8 tablet - **lacking permissions**
 * Install conda environment on W8 tablet
 * Make the program run W8 tablet
 
 ## Environment Management
 Official documentation [here](https://conda.io/docs/user-guide/tasks/manage-environments.html)
+
+### Dependencies
+* `pip install opencv-python`
+* `pip install json`
+* `pip install python-barcode` [Read more](https://pypi.org/project/python-barcode/)
+* Only for dev: `pip install ipykernal`
 
 ### Dev Env Setup with Conda
 1. Make new conda environment `conda create --name env-name python=3.6`
@@ -25,7 +42,7 @@ Official documentation [here](https://conda.io/docs/user-guide/tasks/manage-envi
 You can also use `conda install --name env-name ipykernel` to install from outside the environment.
 
 ### Env export via conda
-1. Activaet environment `source activate env-name`
+1. Activate environment `source activate env-name`
 2. Export via conda `conda env-name export > environment.yml`
 
 ## Conda hacks
