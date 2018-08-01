@@ -20,3 +20,28 @@ You can also use `conda install --name env-name ipykernel` to install from outsi
 ### Env export via conda
 1. Activaet environment `source activate env-name`
 2. Export via conda `conda env-name export > environment.yml`
+
+
+### Issue importing following
+```
+ResolvePackageNotFound:
+- ncurses==6.1=h0a44026_0
+- libcxx==4.0.1=h579ed51_0
+- zlib==1.2.11=hf3cbc9b_2
+- libedit==3.1.20170329=hb402a30_2
+- tbb==4.3_20141023=0
+- numpy-base==1.14.5=py35ha9ae307_0
+- mkl_random==1.0.1=py35h78cc56f_0
+- numpy==1.14.5=py35h9bb19eb_0
+- tk==8.6.7=h35a86e2_3
+- libffi==3.2.1=h475c297_4
+- readline==7.0=hc1231fa_4
+- hdf5==1.8.20=hfa1e0ec_1
+- mkl_fft==1.0.4=py35h5d10147_0
+- openssl==1.0.2o=h26aff7b_0
+- xz==5.2.4=h1de35cc_4
+- libgfortran==3.0.1=h93005f0_2
+- sqlite==3.24.0=ha441bb4_0
+- python==3.5.5=h0a44026_3
+- libcxxabi==4.0.1=hebd6815_0
+```
