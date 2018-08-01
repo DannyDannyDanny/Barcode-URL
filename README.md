@@ -1,7 +1,14 @@
 # Barcode-URL
-Software for easily embedding links in to barcodes which can then be decoded by the same software.
+Software for easily embedding links in to barcodes which can then be decoded by the same software - using the devices camera.
 
-## Camera version
+Note: Name change to OpAcc (Operator Access) is quite likely to take place soon.
+
+## Milestones
+* ~~Install Anaconda on W7 laptop~~
+* Move environment to W7 laptop - **some issue**
+* Install Anaconda on W8 tablet - **lacking permissions**
+* Install conda environment on W8 tablet
+* Make the program run W8 tablet
 
 ## Environment Management
 Official documentation [here](https://conda.io/docs/user-guide/tasks/manage-environments.html)
@@ -20,6 +27,11 @@ You can also use `conda install --name env-name ipykernel` to install from outsi
 ### Env export via conda
 1. Activaet environment `source activate env-name`
 2. Export via conda `conda env-name export > environment.yml`
+
+## Conda hacks
+* `conda env list` - List environments
+* `conda env-name export > environment.yml` - run from within environment to create template of environment
+* `conda env create -f environment.yml` - create environment from template
 
 
 ### Issue importing following
