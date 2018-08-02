@@ -12,11 +12,16 @@ There are three machines:
 ## Milestones
 * ~~Write camera session code~~
 * ~~Install Anaconda on W7~~
-* ~~Move environment to W7~~ - environment had to be recreated
+* ~~Move~~ / **Recreate** ~~environment to W7~~
 * ~~Test camera stream on W7~~
+* Write local barcode reference storage
+* Present OpAcc at IT-project Board?
+* Move code to internal repository
+* Figure out how to access external DBs
 * Write barcode generating code
 * Test barcode generating code on W7
-* Write
+* Figure out how to reploy
+
 * Install Anaconda on W8 tablet - **lacking permissions**
 * Install conda environment on W8 tablet
 * Make the program run W8 tablet
