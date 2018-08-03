@@ -1,6 +1,6 @@
 # %% init
 import json
-import barcode
+import barcode # barcode.PROVIDED_BARCODES[0]
 from IPython.display import SVG
 
 barcodes = {'OP0001':'https://google.com'}
@@ -18,7 +18,7 @@ with open(path_data+file_json,'r') as f:
 
 # %% ENCODING DATA IN A BARDCODE and SHOW BARCODE
 
-# barcode.PROVIDED_BARCODES[0]
+
 
 encoder_c128 = barcode.get_barcode_class('code128')
 
