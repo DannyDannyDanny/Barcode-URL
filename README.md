@@ -3,28 +3,40 @@ Software for easily embedding links in to barcodes which can then be decoded by 
 
 Note: Name change to OpAcc (Operator Access) is quite likely to take place soon.
 
-## List of devices
+## List of devices 💻
 There are three machines:
 * **dev** - my dev machine (MacOS)
 * **w7** - my work machine
 * **w8** - plant floor tablet
 
-## Milestones
+## Milestones 🏁
 * ~~Write camera session code~~
 * ~~Install Anaconda on W7~~
 * ~~Move~~ / **Recreate** ~~environment to W7~~
 * ~~Test camera stream on W7~~
-* Write local barcode reference storage
-* Present OpAcc at IT-project Board?
-* Move code to internal repository
+* Generate barcodes
+  * ~~Write specific code to generate barcodes~~
+  * Write general code to generate barcodes
+* Build Storage
+  * Write local barcode reference storage
+  * Investigate what data needs to be accessed
+  * Investigate how to access this data
+* Project management
+  * Present OpAcc at IT-project Board?
+* ~~Move code to internal repository~~
+  * Stop primarily developing on Github repository
+  * Get remote access to HT repo
 * Figure out how to access external DBs
 * Write barcode generating code
 * Test barcode generating code on W7
 * Figure out how to reploy
-
 * Install Anaconda on W8 tablet - **lacking permissions**
 * Install conda environment on W8 tablet
 * Make the program run W8 tablet
+
+## Barcodes 📦
+This is what a generated barcode might look like :)
+![barcode](python/data/barcode.svg)
 
 ## Environment Management
 Official documentation [here](https://conda.io/docs/user-guide/tasks/manage-environments.html)
@@ -56,7 +68,10 @@ You can also use `conda install --name env-name ipykernel` to install from outsi
 * `conda env create -f environment.yml` - create environment from template
 
 
-### Issue importing following
+### Issues 🕷
+Maybe I should move this to issue area...
+
+#### Importing conda package is a pain
 ```
 ResolvePackageNotFound:
 - ncurses==6.1=h0a44026_0
