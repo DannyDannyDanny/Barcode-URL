@@ -26,13 +26,13 @@ There are three machines:
 * ~~Move code to internal repository~~
   * Stop primarily developing on Github repository
   * Get remote access to HT repo
-* Figure out how to access external DBs
-* Write barcode generating code
-* Test barcode generating code on W7
-* Figure out how to reploy
-* Install Anaconda on W8 tablet - **lacking permissions**
-* Install conda environment on W8 tablet
-* Make the program run W8 tablet
+
+* Complete deployment
+  * Test barcode generating code on **w7**
+  * Install Anaconda on W8 tablet - **lacking permissions**
+  * Install conda environment on **w8** tablet
+  * Make the program run **w8** tablet
+  * Figure out how to mass deploy to **w8**'s
 
 ## Barcodes 📦
 This is what a generated barcode might look like :)
