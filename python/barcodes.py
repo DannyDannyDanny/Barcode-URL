@@ -25,6 +25,9 @@ encoder_c128 = barcode.get_barcode_class('code128')
 text_to_encode = 'Hello, world!'
 filename = 'barcode'
 
-mybarcode = c128(text_to_encode)
-fullname = ean.save(path_data+filename)
+mybarcode = encoder_c128(text_to_encode)
+fullname = mybarcode.save(path_data+filename)
 SVG(filename=path_data+filename+'.svg')
+
+# --->> TERMINAL COMMANDS
+!cat README.md
