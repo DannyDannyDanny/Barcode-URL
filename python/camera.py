@@ -7,7 +7,7 @@ import cv2
 #
 #####
 #print('loading face cascade')
-face_cascade = cv2.CascadeClassifier('./cascades/data/haarcascade_frontalface_alt2.xml')
+#face_cascade = cv2.CascadeClassifier('./cascades/data/haarcascade_frontalface_alt2.xml')
 
 print('loading camera stream')
 cap = cv2.VideoCapture(0)
@@ -29,3 +29,4 @@ while(True):
 print('shutting down')
 cap.release()
 cv2.destroyAllWindows()
+exit()
