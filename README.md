@@ -67,6 +67,11 @@ You can also use `conda install --name env-name ipykernel` to install from outsi
 * `conda env-name export > environment.yml` - run from within environment to create template of environment
 * `conda env create -f environment.yml` - create environment from template
 
+## ipykernel hacks
+```python
+# run terminal commands by using '!'
+!cat README.md
+```
 
 ### Issues 🕷
 Maybe I should move this to issue area...
