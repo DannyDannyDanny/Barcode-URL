@@ -12,11 +12,15 @@ There are three machines:
 ## Milestones 🏁
 * ~~Write camera session code~~
 * ~~Install Anaconda on W7~~
-* ~~Move~~ / **Recreate** ~~environment to W7~~
+* ~~Move~~ / **Recreate** ~~environment on W7~~
 * ~~Test camera stream on W7~~
+* Define pilot demo
+* Open links see [call OS to open links](https://stackoverflow.com/questions/4216985/call-to-operating-system-to-open-url)
 * Generate barcodes
-  * ~~Write specific code to generate barcodes~~
-  * Write general code to generate barcodes
+  * ~~Write pre-specified code to generate barcodes~~
+  * Write user input code to generate barcodes
+  * Output barcodes in `png` format
+  * Output barcodes in user friendly format - currently barcodes are output as SVG files. They can manually be converted using `qlmanage -t -s 1000 -o . filename.svg`
 * Build Storage
   * Write local barcode reference storage
   * Investigate what data needs to be accessed
@@ -26,7 +30,6 @@ There are three machines:
 * ~~Move code to internal repository~~
   * Stop primarily developing on Github repository
   * Get remote access to HT repo
-
 * Complete deployment
   * Test barcode generating code on **w7**
   * Install Anaconda on W8 tablet - **lacking permissions**
@@ -38,7 +41,7 @@ There are three machines:
 This is what a generated barcode might look like :)
 ![barcode](python/data/barcode.svg)
 
-## Environment Management
+## Environment Management 🛠
 Official documentation [here](https://conda.io/docs/user-guide/tasks/manage-environments.html)
 
 ### Dependencies
@@ -62,19 +65,19 @@ You can also use `conda install --name env-name ipykernel` to install from outsi
 1. Activate environment `source activate env-name`
 2. Export via conda `conda env-name export > environment.yml`
 
-## Conda hacks
+## Conda hacks ✴️
 * `conda env list` - List environments
 * `conda env-name export > environment.yml` - run from within environment to create template of environment
 * `conda env create -f environment.yml` - create environment from template
 
-## ipykernel hacks
+## ipykernel hacks 🖤
 ```python
 # run terminal commands by using '!'
 !cat README.md
 ```
 
-### Issues 🕷
-Maybe I should move this to issue area...
+## Issues 🕷
+How do you make a bugs / issues section
 
 #### Importing conda package is a pain
 ```
