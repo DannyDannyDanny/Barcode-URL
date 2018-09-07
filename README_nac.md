@@ -38,6 +38,19 @@ There are three machines:
 This is what a generated barcode might look like :)
 ![barcode](python/data/barcode.svg)
 
+## Pilot Demo
+A downscoped version of the project needs to be made
+### Procedure
+* Choose a link
+* Open OpAcc
+* Enter link
+* Add link to DB
+* Generate link from DB
+* *Print barcode* - how?
+* Scan barcode
+* Open link
+
+
 ## Environment Management
 Official documentation [here](https://conda.io/docs/user-guide/tasks/manage-environments.html)
 
