@@ -9,20 +9,11 @@ from time import sleep
 print('loading camera stream')
 cap = cv2.VideoCapture(0)
 
-print('starting loop')
+print('starting detection - press q to quit')
 
 while(True):
     # Capture frame-by-frame
-    ret, frame = cap.read()
-
-    # Display the resulting frame
-    cv2.imshow('feed',cv2.flip(frame,1))
-    #cv2.imshow('gray',gray)
-    if cv2.waitKey(20) & 0xFF == ord('q'):
-        break
-while(True):
-    # Capture frame-by-frame
-    print('reading frame')
+    #print('reading frame')
     sleep(0.5)
     ret, frame = cap.read()
 
@@ -35,17 +26,17 @@ while(True):
         stroke = 3
         font = cv2.FONT_HERSHEY_SIMPLEX
         fontScale = 1
-        fontColor = (255,255,255)
+        fontColor = color
         lineType = 2
 
-        cv2.putText(frame, barcode.data, (x,y), font, fontScale,fontColor,lineType)
+        cv2.putText(frame, str(barcode.data), (x,y), font, fontScale,fontColor,lineType)
         cv2.rectangle(frame, (x,y),(x+w,y+h),color, stroke)
 
-
+    ## IF len(barcode) == 1: # lookup in opacc db and go to link
 
     # Display the resulting frame
     cv2.imshow('feed',cv2.flip(frame,1))
-    cv2.imshow('feed',frame)
+    #cv2.imshow('feed',frame)
     #cv2.imshow('gray',gray)
     if cv2.waitKey(20) & 0xFF == ord('q'):
         break
