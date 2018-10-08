@@ -1,4 +1,7 @@
 # Barcode-URL
+
+>This project is archived
+
 Software for easily embedding links in to barcodes which can then be decoded by the same software - using the devices camera.
 
 Note: Name change to OpAcc (Operator Access) is quite likely to take place soon.
